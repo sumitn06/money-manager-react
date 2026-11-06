@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Outfit", "sans-serif";
+  background-color: #fcfbfc;
+  overflow-x: hidden;
+}
+
+@theme {
+  --color-primary: #6d00d9;
+  --color-primary-dark: #5700ad;
+}
+
+@layer components {
+  .add-btn {
+    @apply px-4 py-3
+           bg-green-100 text-green-700
+           rounded-lg font-bold text-sm
+           hover:bg-green-200
+           transition-colors cursor-pointer;
+  }
+
+  .add-btn-fill {
+    @apply px-4 py-2 rounded-lg bg-purple-600 text-white font-medium
+         shadow-md shadow-purple-200 hover:bg-purple-700
+         transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl border border-gray-100 p-6;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 8px 16px;
+  background-color: #f9fafb;
+  color: #374151;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card-btn:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.card-btn:active {
+  transform: scale(0.98);
+}
