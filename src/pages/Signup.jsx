@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets.js";
 import Input from "../components/Input.jsx";
-import { validateEmail } from "../util/validation.js";
+import { validateEmail } from "../util/Validation.js";
 import axiosConfig from "../util/AxiosConfig.js";
 import { API_ENDPOINTS } from "../util/ApiEndpoints.js";
 import toast from "react-hot-toast";
